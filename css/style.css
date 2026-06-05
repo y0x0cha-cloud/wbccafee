@@ -1,0 +1,485 @@
+@charset "UTF-8";
+
+/* 共通部分
+------------------------------- */
+html {
+  font-size: 100%;
+}
+body {
+  font-family:
+    "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", sans-serif;
+  line-height: 1.85;
+  color: rgb(81, 203, 173);
+  margin: 0;
+  padding: 0;
+  background-color: #fff; /* 背景のベースを白にしてスッキリと */
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.align-center {
+  text-align: center;
+}
+.font-english {
+  font-family: "Philosopher", sans-serif;
+  font-weight: normal;
+}
+.wrapper {
+  max-width: 1120px;
+  margin: auto;
+  padding: 0 1.5rem;
+}
+
+/* ヘッダー部分（スマホ基準）
+------------------------------- */
+.page-header {
+  padding-top: 1.5rem; /* ★スマホでロゴが上にくっつきすぎないよう余白を確保 */
+  padding-bottom: 1rem;
+  text-align: center;
+}
+.logo {
+  width: 180px; /* ★スマホ向けに少しだけコンパクトにして上品に */
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+.main-nav {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  font-size: 1.1rem; /* ★スマホの画面幅でもはみ出さないサイズ */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.main-nav a {
+  color: rgb(255, 255, 255);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); /* ★背景画像に紛れないよう文字に薄い影をプラス */
+}
+.main-nav a:hover {
+  color: rgb(56, 212, 176);
+}
+
+/* タイトル部分（スマホ基準）
+------------------------------- */
+.page-title {
+  font-size: 2.8rem; /* ★スマホでもパッと目を引くサイズ感に */
+  text-align: center;
+  margin-top: 2.5rem; /* ★メニューの下に綺麗に収まる高さに調整 */
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+  color: #fff; /* ★スマホ表示でもFoodの文字色を白にして映えさせます */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* ★白文字が背景に溶けないようお守りの影 */
+}
+
+.heading-large {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.03em;
+}
+
+/* 中見出し（medium） */
+.heading-medium {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  letter-spacing: 0.03em;
+}
+
+/* カバー画像部分（スマホ基準）
+------------------------------- */
+.cover {
+  background-size: cover;
+  background-position: center bottom;
+  min-height: 450px;
+  height: auto;
+  padding-bottom: 3rem;
+}
+.cover-home {
+  background-image: url(../images/abu3laa-ai-generated-9128644_1920.png);
+}
+
+/* サブページのカバー画像（スマホ基準） */
+.sub-cover {
+  background-size: cover;
+  background-position: center center; /* ★スマホでは画像の中央が見えるように */
+  height: 320px; /* ★スマホでもヘッダーと見出しが窮屈にならないよう高さを少し広げました */
+  margin-bottom: 3.5rem;
+  overflow: hidden;
+}
+.cover-news {
+  background-image: url(../images/news.jpg);
+}
+
+/* 記事（News）部分
+------------------------------- */
+.post {
+  margin-bottom: 4rem;
+}
+.post-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+  color: rgb(49, 11, 8);
+}
+.post-info {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.post-date {
+  font-size: 0.875rem;
+  color: #777;
+}
+.post-thumbnail {
+  border-radius: 16px;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+.post p {
+  margin-bottom: 1.8rem;
+  line-height: 1.85;
+  font-size: 0.95rem;
+  color: #432;
+}
+.post-cat {
+  display: flex;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.post-cat a {
+  color: #432;
+  background-color: #faf7f0;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  padding: 0.4rem 0.75rem;
+}
+.post-cat a:hover {
+  background-color: #c9c2bc;
+}
+
+/* ボタン・アバウト部分
+------------------------------- */
+.about {
+  max-width: 736px;
+  padding: 0 1.5rem;
+  margin: 3rem auto 0;
+  margin-bottom: 4rem;
+}
+.about p {
+  margin-bottom: 3rem;
+}
+.btn {
+  display: inline-block;
+  font-size: 1.25rem;
+  background-color: rgb(81, 203, 173);
+  color: #fff;
+  border-radius: 8px;
+  padding: 0.75rem 2rem;
+  transition: 0.5s;
+}
+.btn:hover {
+  background-color: rgb(88, 43, 143);
+}
+
+/* インフォメーション（テーブル）部分
+------------------------------- */
+.info {
+  width: 100%;
+  max-width: 544px;
+  margin: auto;
+  padding: 0 1rem; /* ★スマホ向けに横余白を微調整 */
+  border-spacing: 0;
+  font-size: 0.95rem;
+}
+.info th,
+.info td {
+  border-bottom: 1px solid #c9c2bc;
+  color: rgb(49, 11, 8);
+}
+.info th {
+  text-align: left;
+  font-weight: normal;
+  padding: 1rem 0.5rem; /* ★スマホで文字が詰まらないよう調整 */
+  width: 35%;
+}
+.info td {
+  padding: 1rem 0;
+}
+
+/* サイドバー */
+.side-menu {
+  list-style: none;
+  text-align: center;
+  margin-bottom: 4rem;
+  padding: 0;
+}
+.side-menu li {
+  border-bottom: 1px solid #c9c2bc;
+}
+.side-menu a {
+  color: #432;
+  display: block;
+  padding: 0.85rem 1rem;
+  font-size: 0.95rem;
+}
+.side-menu a:hover {
+  color: #0bd;
+}
+
+/* フッター部分
+------------------------------- */
+.page-footer {
+  background-image: url(../images/footerw.png);
+  background-size: cover;
+  background-position: center;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+
+/* メニュー・グリッド部分（スマホ基準）
+------------------------------- */
+.cover-menu {
+  background-image: url(../images/menu.png);
+}
+.grid {
+  display: grid;
+  gap: 2.5rem 1.2rem; /* ★スマホの狭い画面でも、2列が綺麗に並ぶ幅に */
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.item img {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* ★メニュー画像にほんのり影をつけて今っぽく */
+}
+.item .menu-name {
+  font-size: 0.95rem;
+  margin-top: 0.75rem;
+  color: #432;
+  font-weight: bold;
+}
+/* ==========================================
+   Contact ページ用スタイル
+========================================== */
+
+/* カバー画像（Contact専用） */
+.cover-contact {
+  background-image: url(../images/contact.jpg); /* ※実際の背景画像名に合わせてください */
+}
+
+/* 1. アクセスセクション（スマホ基準） */
+.location {
+  margin-bottom: 4.5rem;
+}
+.location-info {
+  margin-bottom: 2rem;
+}
+/* マップのレスポンシブ化（アスペクト比を保って伸縮） */
+.location-map {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 の比率 */
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+.location-map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* 2. メールセクション */
+.email {
+  text-align: center;
+  background-color: #faf7f0; /* 優しい台紙のような薄いベージュ */
+  padding: 3rem 1.5rem;
+  border-radius: 20px;
+  margin-bottom: 4.5rem;
+}
+.email-text {
+  max-width: 640px;
+  margin: 0 auto 2rem;
+  font-size: 0.95rem;
+  color: #432;
+  text-align: left; /* 長文は左寄せが読みやすい */
+}
+
+/* 3. SNSグリッドセクション（スマホ基準） */
+.sns-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* スマホは1列 */
+  gap: 3.5rem;
+  margin-bottom: 6rem;
+}
+.sns-item {
+  width: 100%;
+  text-align: center;
+}
+/* 埋め込みタグが中央に寄るためのお守り */
+.embed-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.embed-wrapper > * {
+  width: 100% !important;
+  max-width: 450px !important; /* 横に広がりすぎない上品な幅 */
+}
+
+/* YouTubeの2列レイアウト（スマホ基準は1列） */
+.youtube-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* 4. 画面幅800px以上のPC向け設定上書き */
+@media (min-width: 800px) {
+  /* マップと情報を横並びに */
+  .location {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+  }
+  .location-info {
+    width: 40%;
+    margin-bottom: 0;
+  }
+  .location-map {
+    width: 55%;
+    padding-top: 35%; /* PCでは少し浅めのスタイリッシュな横長に */
+  }
+
+  /* メール文章をPC用に少し大きく */
+  .email-text {
+    font-size: 1rem;
+  }
+
+  /* Instagram と X を横並びの2列、YouTubeをその下にドンと構える */
+  .sns-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem 3rem;
+  }
+  .sns-youtube-section {
+    grid-column: 1 / -1; /* 横幅いっぱいに広げる */
+    margin-top: 1rem;
+  }
+}
+
+/* 画面幅800px以上のPC向け設定
+------------------------------- */
+@media (min-width: 800px) {
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 1rem;
+  }
+  .logo {
+    width: 210px; /* ★PCでは元の存在感あるロゴサイズに */
+    margin-bottom: 0;
+  }
+  .main-nav {
+    font-size: 1.5rem;
+    gap: 2.5rem;
+  }
+  .main-nav a {
+    text-shadow: none; /* ★PCでは影をオフに */
+  }
+  .cover-news {
+    background-image: url(../images/chococake.jpg);
+    padding-top: 1.5rem;
+  }
+  .page-title {
+    font-size: 4.5rem;
+    margin-top: 1rem;
+    text-shadow: none; /* ★PCでは影をオフに */
+  }
+  .post-title {
+    font-size: 1.8rem;
+    margin-bottom: 1.25rem;
+  }
+  .post p {
+    font-size: 1rem;
+  }
+  .heading-large {
+    font-size: 3rem;
+  }
+  .heading-medium {
+    font-size: 1.6rem;
+  }
+  .cover {
+    height: 800px;
+  }
+  .sub-cover {
+    height: 528px;
+    margin-bottom: 6rem;
+    background-position: center bottom;
+  }
+  .news-contents {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .post {
+    width: 68%;
+    margin-bottom: 0;
+  }
+  .sidebar {
+    width: 26%;
+  }
+  .sidebar .heading-medium {
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+  }
+
+  /* PC用のメニュー・グリッド上書き */
+  .cover-menu {
+    background-image: url(../images/menu.png);
+  }
+  .grid {
+    gap: 3.5rem 2rem;
+    grid-template-columns: repeat(3, 1fr); /* PCは3列 */
+    margin-bottom: 7rem;
+  }
+  .item img {
+    margin-bottom: 0;
+  }
+  .item .menu-name {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+  }
+}

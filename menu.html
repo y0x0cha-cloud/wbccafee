@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>WCB CAFE Menu</title>
+    <meta
+      name="description"
+      content="厳選ミルクを使用したオリジナルミルクティー専門店"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/luminous-lightbox/2.3.2/luminous-basic.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="sub-cover cover-menu">
+      <header class="page-header wrapper">
+        <h1 class="align-center">
+          <a href="index.html"
+            ><img class="logo" src="images/logo.svg" alt="チョコミント専門店"
+          /></a>
+        </h1>
+        <nav>
+          <ul class="main-nav font-english">
+            <li><a href="news.html">News</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <h2 class="page-title font-english">Food</h2>
+    </div>
+
+    <main class="wrapper grid">
+      <div class="item">
+        <a class="grid-gallery" href="images/menu1.webp" data-aos="fade-up">
+          <img src="images/menu1.webp" alt="アボカドトースト" />
+        </a>
+        <p class="menu-name">アボカドトースト</p>
+      </div>
+      <div class="item">
+        <a class="grid-gallery" href="images/menu2.webp" data-aos="fade-up">
+          <img src="images/menu2.webp" alt="生ハムカプレーゼ" />
+        </a>
+        <p class="menu-name">生ハムカプレーゼ</p>
+      </div>
+      <div class="item">
+        <a class="grid-gallery" href="images/menu3.webp" data-aos="fade-up">
+          <img src="images/menu3.webp" alt="ペンネボロネーゼ" />
+        </a>
+        <p class="menu-name">ペンネボロネーゼ</p>
+      </div>
+      <div class="item">
+        <a class="grid-gallery" href="images/menu4.webp" data-aos="fade-up">
+          <img src="images/menu4.webp" alt="ムール貝のワイン蒸し" />
+        </a>
+        <p class="menu-name">ムール貝のワイン蒸し</p>
+      </div>
+      <div class="item">
+        <a class="grid-gallery" href="images/menu5.webp" data-aos="fade-up">
+          <img src="images/menu5.webp" alt="根菜のグリル" />
+        </a>
+        <p class="menu-name">根菜のグリル</p>
+      </div>
+      <div class="item">
+        <a class="grid-gallery" href="images/menu6.webp" data-aos="fade-up">
+          <img src="images/menu6.webp" alt="ジェノベーゼ" />
+        </a>
+        <p class="menu-name">ジェノベーゼ</p>
+      </div>
+      <div class="item">
+        <a class="grid-gallery" href="images/menu7.webp" data-aos="fade-up">
+          <img src="images/menu7.webp" alt="ラザニア" />
+        </a>
+        <p class="menu-name">ラザニア</p>
+      </div>
+      <div class="item">
+        <a class="grid-gallery" href="images/menu8.webp" data-aos="fade-up">
+          <img src="images/menu8.webp" alt="カプチーノ" />
+        </a>
+        <p class="menu-name">カプチーノ</p>
+      </div>
+      <div class="item">
+        <a class="grid-gallery" href="images/menu9.webp" data-aos="fade-up">
+          <img src="images/menu9.webp" alt="チョコブラウニー" />
+        </a>
+        <p class="menu-name">チョコブラウニー</p>
+      </div>
+    </main>
+
+    <footer class="page-footer">
+      <h3 class="heading-large font-english">Information</h3>
+      <table class="info">
+        <tr>
+          <th>住所</th>
+          <td>東京都港区六本木0-0</td>
+        </tr>
+        <tr>
+          <th>電話</th>
+          <td>03-3544-1894</td>
+        </tr>
+        <tr>
+          <th>営業時間</th>
+          <td>10:00～20:00</td>
+        </tr>
+        <tr>
+          <th>店休日</th>
+          <td>水曜</td>
+        </tr>
+      </table>
+      <div class="align-center" style="margin-top: 2rem">
+        <p><small style="color: rgb(49, 11, 8)">&copy; 2026 WCB CAFE</small></p>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/luminous-lightbox/2.3.2/luminous.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        if (typeof LuminousGallery !== "undefined") {
+          new LuminousGallery(document.querySelectorAll(".grid-gallery"));
+        }
+        if (typeof AOS !== "undefined") {
+          AOS.init({
+            duration: 800,
+            once: true,
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

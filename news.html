@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>WCB CAFE News</title>
+    <meta name="description" content="厳選された素材を使用したカフェ" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- ⭕ https に統一 -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+  </head>
+
+  <body>
+    <div class="sub-cover cover-news">
+      <header class="page-header wrapper">
+        <h1 class="align-center">
+          <!-- ⭕ index.html に修正 -->
+          <a href="index.html"
+            ><img class="logo" src="images/logo.svg" alt="チョコミント専門店"
+          /></a>
+        </h1>
+        <nav>
+          <ul class="main-nav font-english">
+            <li><a href="news.html">News</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <!-- ⭕ Contact に修正 -->
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <h2 class="page-title font-english">News</h2>
+    </div>
+
+    <main class="wrapper news-contents">
+      <article class="post">
+        <header>
+          <h2 class="post-title">新メニューの試食イベントを開催します</h2>
+          <div class="post-meta">
+            <ul class="post-cat">
+              <li><a href="#">お店の紹介</a></li>
+              <li><a href="#">イベント</a></li>
+            </ul>
+            <time class="post-date" datetime="2026-06-01">2026年6月1日</time>
+          </div>
+        </header>
+        <img class="post-thumbnail" src="images/candies.jpg" alt="店内の様子" />
+        <p>
+          これまでにない、お客様が自身でカスタマイズする形のメニュー開発に取り組んでおります。
+          皆様に楽しみながら作り、召し上がっていただく自信をもってご紹介できるメニューとなっております。
+        </p>
+        <p>
+          当日はメニューの一部を試食していただけます。
+          カラフルなグミやチョコレートを自身で選びトッピングしていただくメニューとなっておりますので、ぜひおこしください。
+          また、試食会に参加された方には、アンケートにご協力いただけるようお願いする予定です。
+          皆様の貴重なご意見をいただき、よりよいメニューの開発に努めさせていただきますので、ご協力よろしくお願いいたします。
+        </p>
+        <p>
+          <!-- ⭕ 2026年6月の投稿に合わせて、開催日時と曜日（2026年6月14日は日曜日）を調整しました -->
+          日時：6月14日（日）11時から20時まで<br />
+          場所：カフェ内イベントスペース
+        </p>
+        <p>
+          <!-- ⭕ 「お断わり」のタイポを「お断り」に修正 -->
+          定員に達した場合、お断りさせていただくこともございますので、お早目にお申込みください。
+          試食会で皆様にお会いできるのを心よりお待ち申し上げます。
+        </p>
+      </article>
+
+      <aside class="sidebar">
+        <h3 class="heading-medium font-english">Category</h3>
+        <ul class="side-menu">
+          <li><a href="#">お店の紹介</a></li>
+          <li><a href="#">期間限定メニュー</a></li>
+          <li><a href="#">イベント</a></li>
+          <li><a href="#">お客様との会話</a></li>
+        </ul>
+
+        <h3 class="heading-medium font-english">Archives</h3>
+        <ul class="side-menu">
+          <li><a href="#">2023年</a></li>
+          <li><a href="#">2022年</a></li>
+          <li><a href="#">2021年</a></li>
+          <li><a href="#">2020年</a></li>
+        </ul>
+      </aside>
+    </main>
+
+    <footer class="page-footer">
+      <h3 class="heading-large font-english">Information</h3>
+      <table class="info">
+        <tr>
+          <th>住所</th>
+          <td>東京都港区六本木0-0</td>
+        </tr>
+        <tr>
+          <th>電話</th>
+          <td>03-3544-1894</td>
+        </tr>
+        <tr>
+          <th>営業時間</th>
+          <td>10:00～20:00</td>
+        </tr>
+        <tr>
+          <th>店休日</th>
+          <!-- ⭕ 水曜に統一 -->
+          <td>水曜</td>
+        </tr>
+      </table>
+      <!-- ⭕ 消えていたコピーライトを復活 -->
+      <div class="align-center" style="margin-top: 2rem">
+        <p><small style="color: rgb(49, 11, 8)">&copy; 2026 WCB CAFE</small></p>
+      </div>
+    </footer>
+  </body>
+</html>

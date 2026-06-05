@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ミントティー専門店</title>
+    <meta
+      name="description"
+      content="厳選ミルクを使用したオリジナルミルクティー専門店"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- ⭕ http から https に安全な通信へ修正しました -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+  </head>
+  <body>
+    <div class="cover cover-home">
+      <header class="page-header wrapper">
+        <h1 class="align-center">
+          <!-- ⭕ index.html に修正して、ロゴからトップに戻れるようにしました -->
+          <a href="index.html"
+            ><img class="logo" src="images/logo.svg" alt="チョコミント専門店"
+          /></a>
+        </h1>
+        <nav>
+          <ul class="main-nav font-english">
+            <li><a href="news.html">News</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <!-- ⭕ 大文字の Contact に整えました -->
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <h2 class="page-title font-english">Chocolate Mint Fair</h2>
+    </div>
+
+    <section class="about">
+      <h3 class="heading-large font-english">About Cafe</h3>
+      <p>
+        WCB
+        CAFEでは、無添加チョコミントを使った様々なお菓子と、厳選されたミルクを使用したミルクティー専門店です。心と体に優しい、それでいて、飽きのこない空間をご用意しています。素材の本来のおいしさを引き出したメニューを楽しみながら、癒しの時間をお過ごしください。
+      </p>
+      <div class="align-center">
+        <a class="btn" href="menu.html">メニューを見る</a>
+      </div>
+    </section>
+
+    <!-- フッター（他ページと完全に仕様を統一） -->
+    <footer class="page-footer">
+      <h3 class="heading-large font-english">Information</h3>
+      <table class="info">
+        <tr>
+          <th>住所</th>
+          <td>東京都港区六本木0-0</td>
+        </tr>
+        <tr>
+          <th>電話</th>
+          <td>03-3544-1894</td>
+        </tr>
+        <tr>
+          <th>営業時間</th>
+          <td>10:00～20:00</td>
+        </tr>
+        <tr>
+          <th>店休日</th>
+          <!-- ⭕ 「水曜」に統一しました -->
+          <td>水曜</td>
+        </tr>
+      </table>
+      <!-- ⭕ 消えていたコピーライト部分を復活させました -->
+      <div class="align-center" style="margin-top: 2rem">
+        <p><small style="color: rgb(49, 11, 8)">&copy; 2026 WCB CAFE</small></p>
+      </div>
+    </footer>
+  </body>
+</html>
